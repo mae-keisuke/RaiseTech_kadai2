@@ -12,7 +12,7 @@ public class Main {
         List<Company> companyList = List.of(company1, company2, company3, company4, company5, company6);
 
         for (Company company : companyList) {
-            if (company.getIndustry() == "IT") {
+            if (company.getIndustry().equals( "IT")) {
                 System.out.print("企業名" + company.getId() + "：" + company.getName());
                 System.out.print("　従業員数：" + company.getEmployeeNumber() + "人");
                 System.out.print("　平均年齢：" + company.getAveAge() + "歳");
